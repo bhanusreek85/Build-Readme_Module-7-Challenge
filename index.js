@@ -76,7 +76,7 @@ function init() {
         .prompt(questions)
         .then((answers) => {
             const readmeContent = generateMarkdown(answers);
-            writeToFile(`./README_${Date.now()}.md`, readmeContent);
+            writeToFile(`./README.md`, readmeContent);
             console.log("README.MD generated successfully")
 
         }).catch((error) => {
